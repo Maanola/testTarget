@@ -1,0 +1,10 @@
+Escreva um programa que inverta os caracteres de um string:
+Código em python:
+
+frase = input("Digite uma palavra ou frase: ")
+fraseInv = ""
+
+for i in range(len(frase)-1, -1, -1):
+    fraseInv += frase[i]
+
+print("A palavra ou frase invertida fica:", fraseInv)
