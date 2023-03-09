@@ -1,0 +1,22 @@
+Sequência de Fibonacci:
+Código em python:
+
+def sequencia(n):
+    f = [0, 1]
+    while len(f) < n:
+        proxN = f[-1] + f[-2]
+        f.append(proxN)
+    return f
+
+def checagem(n):
+    f = sequencia(n+1)
+    if n in f:
+        return 1
+    else:
+        return 2
+
+n = int(input('Digite um número: '))
+if checagem(n) == 1:
+    input(f'O número {n} pertence à sequência')
+else:
+    input(f'O número {n} não pertence à sequência')
